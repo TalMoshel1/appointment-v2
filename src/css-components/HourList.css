@@ -1,0 +1,29 @@
+.hour-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.hour-event {
+  flex-grow: 1;
+}
+
+.hours-container {
+  gap: 1rem;
+}
+
+
+.hour-container {
+  padding: 5px 0;
+  display: flex;
+  height: fit-content;
+  border-bottom: 1px solid #ccc;
+}
+
+.hour-event-container {
+  flex-grow: 1;
+}
+.hour:last-child {
+  border-bottom: none;
+}

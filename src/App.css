@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* select, option {
+  all: unset;
+} */
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FBFBFB;
+  color: #778899;
+}
+
+.slick-dots {
+  display: none; 
+}
+
+@media (orientation: landscape) {
+  .slider-container {
+    width: 60%;
+     left:50%;
+    transform: translate(-50%, -50%) ;
+    margin-top: 5%;
+  }
+}
+
+@media (orientation: portrait) {
+  .slider-container {
+    width: 100%;
+    margin-top: 1rem;
+
+  }
+}
+
+
+
+.slick-slide {
+   z-index: 998;
+  text-align: center;
+  border: 1px solid #66FCF1;
+  margin:0.2rem;
+  border-radius: 22px;
+  /* overflow:'hidden';  */
+
+}
+
+.slick-active.slick-current {
+  z-index: 999;
+  }
+
+.slick-list {
+  /* margin: 0 -10px; */
+}
+
+.slick-track {
+  display: flex;
+}
+
+.hasLesson {
+  /* color: #66FCF1; */
+  /* margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem; */
+}
+
+.item-h {
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+.slider-item {
+  /* border: 1px solid black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow:hidden; */
+  border-radius: 20px;
+
+}
+
+.hasLesson:hover{
+  cursor:pointer;
+}
+
+@media (orientation: portrait) {
+  .slider-item {
+    /* height: 7rem; */
+  }
+}
+
+@media (orientation: landscape) {
+.slider-item {
+  /* height:7rem; */
+}
+}
+
+.item-h {
+  width:100%;
+  z-index: 1000;
+  font-size: 1rem;
+}
+
+h3 { 
+  width:100px
+}
+
+/* button {
+  all: unset;
+} */
+
+input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s !important;
+  }
+
+  .days-container {
+    display:flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 11svh;
+  }

@@ -1,0 +1,34 @@
+.days {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(62px, 1fr));
+    flex-grow: 1;
+    flex-direction: row-reverse;
+    direction: rtl;
+    /* gap:1rem; */
+    
+    
+  }
+
+  @media (orientation: landscape) {
+    .days {
+      gap: 1rem;
+    }
+
+
+  }
+
+  @media (orientation: portrait) {
+    .days {
+      border-right: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+
+    }
+
+    .day {
+      /* border: 1px solid #ccc; */
+
+    }
+
+
+  }
+
